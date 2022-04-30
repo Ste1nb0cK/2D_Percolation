@@ -1,8 +1,8 @@
 #include "create_filled_grid.hpp"
 
-Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic>
+Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic>
 create_filled_grid(const int L, const double p, const int seed) {
-  Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A;
+  Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A;
   A.resize(L, L);
   // random numbers engine
   std::mt19937_64 gen(seed);

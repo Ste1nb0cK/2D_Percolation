@@ -1,7 +1,7 @@
 #include "check_count_single.hpp"
 
 bool check_up_neighbor(int n, int m,
-                       Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
+                       Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
   if (n == 0) {
     return 0;
   } else {
@@ -10,7 +10,7 @@ bool check_up_neighbor(int n, int m,
 }
 
 bool check_down_neighbor(
-    int n, int m, Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
+    int n, int m, Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
   int L = A.rows();
   if (n == L - 1) {
     return 0;
@@ -20,7 +20,7 @@ bool check_down_neighbor(
 }
 
 bool check_right_neighbor(
-    int n, int m, Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
+    int n, int m, Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
   int L = A.cols();
   if (m == L - 1) {
     return 0;
@@ -30,7 +30,7 @@ bool check_right_neighbor(
 }
 
 bool check_left_neighbor(
-    int n, int m, Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
+    int n, int m, Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
   if (m == 0) {
     return 0;
   } else {
@@ -38,10 +38,11 @@ bool check_left_neighbor(
   }
 }
 
-int count_neighbors(
-  int n, int m, Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
+int count_neighbors(int n, int m,
+                    Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A) {
   int up = check_up_neighbor(n, m, A);
-  int down = check_down_neighbor(n,  m,  A);
-  int left = check_left_neighbor(n, m,  A);
+  int down = check_down_neighbor(n, m, A);
+  int left = check_left_neighbor(n, m, A);
   int right = check_right_neighbor(n, m, A);
-  return up + down + left +  right;}
+  return up + down + left + right;
+}
