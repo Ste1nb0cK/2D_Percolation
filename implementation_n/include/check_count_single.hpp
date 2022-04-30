@@ -3,16 +3,16 @@
 //This functions interact with only one element of the matrix
 
 bool check_up_neighbor(int n, int m,
-                       Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A);
+                       Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A);
 /* check_up_neighbor( int n, int m,
- *                     Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic>);
+ *                     Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic>);
  *DESCRIPTION: Checks if the down neighbor for a determined element of a given
  *            matrix is filled.
  *INPUT: int n. Column coordinate of the element.
  *
  *      int m. Row coordinate of the element.
  *
- *      Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
+ *      Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
  *      which the element belongs.
  *
  *Output: Returns a bool true in case it is filled, and false if it is not
@@ -20,16 +20,16 @@ bool check_up_neighbor(int n, int m,
  *
  */
 bool check_down_neighbor(int n, int m,
-                         Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A);
+                         Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A);
 /* check_up_neighbor( int n, int m,
- *                    Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic>);
+ *                    Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic>);
  *DESCRIPTION: Checks if the right neighbor for a determined element of a given
  *             matrix is filled.
  *INPUT: int n. Column coordinate of the element.
  *
  *      int m. Row coordinate of the element.
  *
- *      Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
+ *      Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
  *      which the element belongs.
  *
  *Output: Returns a bool true in case it is filled, and false if it is not
@@ -37,16 +37,16 @@ bool check_down_neighbor(int n, int m,
  *
  */
 bool check_right_neighbor(
-    int n, int m, Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A);
+    int n, int m, Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A);
 /* check_up_neighbor( int n, int m,
- *                     Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic>);
+ *                     Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic>);
  *DESCRIPTION: Checks if the left neighbor for a determined element of a given
  *              matrix is filled.
  *INPUT: int n. Column coordinate of the element.
  *
  *      int m. Row coordinate of the element.
  *
- *      Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
+ *      Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
  *      which the element belongs.
  *
  *Output: Returns a bool true in case it is filled, and false if it is not
@@ -54,9 +54,9 @@ bool check_right_neighbor(
  *
  */
 bool check_left_neighbor(int n, int m,
-                         Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A);
+                         Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A);
 /*count_neighbors(int n, int
-                         Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A);
+                         Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A);
 * DESCRIPTION: Determine how many of the neighbors for a determined element of
 *              of a given matrix are filled.
 *
@@ -64,12 +64,11 @@ bool check_left_neighbor(int n, int m,
 *
 *        int m. Row coordinate of the element.
 *
-*       Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
+*       Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A. The matrix to
 *       which the element belongs.
 *
 * OUTPUT: int N_nm. Amount of neighbors of A(n,m) that are filled.
 *
 */
 int count_neighbors(int n, int m,
-                    Eigen::Matrix<bool, Eigen::Dynamic, Eigen::Dynamic> A);
-
+                    Eigen::Array<bool, Eigen::Dynamic, Eigen::Dynamic> A);
