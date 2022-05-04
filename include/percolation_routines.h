@@ -1,14 +1,14 @@
 #ifndef PERCOLATION_ROUTINES_H_
 #define PERCOLATION_ROUTINES_H_
 #include<Eigen/Dense>
-void hood(const Eigen::Ref<Eigen::ArrayXXi> M, Eigen::Ref<Eigen::ArrayXXi> F,
+void hood(const Eigen::ArrayXXi& M, Eigen::ArrayXXi& F,
           int L, int ii, int jj, int target);
 /*Esta función a partir de una casilla (i,
 j) de la matriz M, crea una matriz F con un cluster formado por casillas con
 el valor de "target" y todas las demás casillas fuera del cluster particular
 son cero. */
 
-Eigen::ArrayXXi Path(const Eigen::Ref<Eigen::ArrayXXi> I, int L, int scanning,
+Eigen::ArrayXXi Path(const Eigen::ArrayXXi& I, int L, int scanning,
      int target); /*Este método toma la matriz de entrada I y devuelve otra
                      matriz con todos los clusters del valor target
                      (percolantes o no) que inician en la arista izquierda si el
@@ -16,14 +16,14 @@ Eigen::ArrayXXi Path(const Eigen::Ref<Eigen::ArrayXXi> I, int L, int scanning,
                      scanning es 0. */
 
 Eigen::ArrayXXi clouster_matrix(
-    const Eigen::Ref<Eigen::MatrixXi> I,
+    const Eigen::MatrixXi& I,
     int L); /*Este método toma la matriz I, y nos devuelve lo que llamé"la
                matriz de percolación, que estará llena con el número 2 en todas
                las casillas que hagan parte de un clouster percolante, los demás
                valores son ceros." */
 
-Eigen::ArrayXXi cluster_matrix(const Eigen::Ref<Eigen::ArrayXXi> I, int L);
-bool Percolation(const Eigen::Ref<Eigen::ArrayXXi> I,
+Eigen::ArrayXXi cluster_matrix(const Eigen::ArrayXXi& I, int L);
+bool Percolation(const Eigen::ArrayXXi& I,
                  int L); /*Este método recibe la matriz de percolación y nos
 dice si existe un clouster percolante o no. */
 

@@ -8,14 +8,15 @@ OBJS =  main1_code.o percolation_routines.o fill.o
 INCLUDES = -I "./include"
 #compiler specifications
 CXX = g++
-CXXFLAGS = -Wall -fsanitize=address -fsanitize=leak -fsanitize=undefined
+CXXFLAGS = -Wall
+SANITIZERS = -fsanitize=leak -fsanitize=address -fsanitize=leak
 DEBUGFLAG = -g
 
 #specify where to find the .cpp files
 vpath %.cpp ./src
 vpath %.o ./build
 foo: ${OBJS}
-	${CXX} ${CXXFLAGS} ${INCLUDES} -o $@ $(shell find ${OBJ_DIR} -name '*.o')
+	${CXX} ${CXXFLAGS} ${SANITIZERS} ${INCLUDES} -o $@ $(shell find ${OBJ_DIR} -name '*.o')
 
 clean:
 	-rm -f ${OBJ_DIR}/*.o foo*
@@ -23,7 +24,7 @@ clean:
 #implicit rule for making .o from .cpp
 .cpp.o:
 	@-mkdir build
-	${CXX} ${CXXFLAGS} ${INCLUDES} -c $< -o  ${OBJ_DIR}/$@
+	${CXX} ${CXXFLAGS} ${SANITIZERS} ${INCLUDES} -c $< -o  ${OBJ_DIR}/$@
 
 #format .cpp files using clang format
 format:
@@ -31,6 +32,6 @@ format:
 	clang-format -i --dry-run include/*.h
 #debug the code
 debug:
-	${CXX} ${DEBUGFLAG} ${CXXFLAGS} ${INCLUDES} ${SRCS} -o foo_debug
+	${CXX} ${DEBUGFLAG}  ${INCLUDES} ${SRCS} -o foo_debug
 	chmod +x init_debug.sh
 	@./init_debug.sh
