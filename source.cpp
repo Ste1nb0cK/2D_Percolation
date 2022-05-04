@@ -32,19 +32,19 @@ int main(int argc, char *argv[]) {
 
  
    
-   /*  Eigen::MatrixXd M(L, L);
+     Eigen::MatrixXd M(L, L);
    M = fill(L, P, seed);
-   M.resize(L, L);*/
+   M.resize(L, L);
    
 
-     Eigen::MatrixXd M(L, L);
+   /*  Eigen::MatrixXd M(L, L);
    for(int ii =0; ii<L; ++ii){
      for(int jj = 0; jj < L; ++jj){
 
        if( ii==5) {M(ii, jj)= 1;}else{ M(ii, jj)=0;}
 
      }
-     }
+     }*/
    
     Eigen::MatrixXd F(L,L);
   

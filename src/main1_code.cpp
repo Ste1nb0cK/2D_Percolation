@@ -8,11 +8,18 @@
 
 int main(int argc, char *argv[]) {
 
-  const int L = std::atoi(argv[1]);
-  const double p = std::atof(argv[2]);
-  const double seed = std::atof(argv[3]);
+   const int L = std::atoi(argv[1]);
+   const double p = std::atof(argv[2]);
+   const double seed = std::atof(argv[3]);
+  
+  
   Eigen::ArrayXXi M = Eigen::ArrayXXi::Zero(L,L);
   M = fill_array(L, p, seed);
+ 
+  
+   
+  
+
   Eigen::MatrixXi F = Eigen::ArrayXXi::Zero(L, L) ;
   F = cluster_matrix(M, L);
 

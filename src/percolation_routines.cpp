@@ -79,17 +79,42 @@ Eigen::ArrayXXi cluster_matrix(const Eigen::ArrayXXi& I, int L) {
     //  L, L); // Para crear la matriz percolante sumamos F y la transpuesta de F,
              // las casillas que hagan parte de un cluster, al sumarlas, el
              // resultado debe ser 2, sin embargo esto no es suficiente, porque
-             // aún pueden haber clou                             sters que no
+             // aún pueden haber clousters que no
              // son percolantes.
   Eigen::ArrayXXi med = F + J.transpose();
-  // med = F + J.transpose();
+ 
+
+  int Vclouster_id=0;                               //Puede suceder que tengamos clousters puramente verticales y puramente
+                                                    // verticales que no toquen las fronteras laterales, un ejemplo sería
+                                                    //una linea recta que atravieza la matriz, para identificar estos clousters
+  int Hclouster_id=0;                               //recorremos la última columna de F y J, y vemos que si son nulas alguna de las
+                                                    //dos, los identificadores (Vclouster_id y Hclouster_id) se quedarán nulos, y por
+                                                    //ende, debemos retornar una matriz de percolación diferente.
+
+  for(int ii=0; ii<L; ++ii){
+
+    if(F(ii, L-1)!=0){Vclouster_id=1;}
+    if(J(ii, L-1)!=0){Hclouster_id=1;}
+  }
+
+  if(Vclouster_id==0){med = 2*J;
+    J.resize(0,0);
+    return Path(med,L, 0, 2).transpose();}
+
+  if(Hclouster_id==0){med = 2*F;
+    F.resize(0,0);
+    return Path(med, L, 0, 2);}
+
+
   J.resize(0,0);
   F.resize(0,0);
+
+
   Eigen::ArrayXXi F1 = Path(med, L, 0, 2);
       // Para solucionar esto, creamos una matriz F1, que tomará la
           // matriz med y le creará los caminos buscando el número 2 pero
           // desde la derecha, grantizando que esos caminos solo pueden
-          // corresponder a clusters percolan                            tes,
+          // corresponder a clusters percolantes,
           // por ende F1 será la matriz de percolación, nótese que si el
           // sistema no percola, la matriz F1 será nula
   // F1 = Path(med, L, 0, 2);
