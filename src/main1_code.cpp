@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
   
   
   Eigen::ArrayXXi M = Eigen::ArrayXXi::Zero(L,L);
-  M = fill_array(L, p, seed);
+  fill_array(M, L, p, seed);
  
   
    
