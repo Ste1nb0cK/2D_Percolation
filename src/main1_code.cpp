@@ -6,6 +6,9 @@
 #include "percolation_routines.h"
 #include "fill.h"
 
+
+
+
 int main(int argc, char *argv[]) {
 
    const int L = std::atoi(argv[1]);
@@ -20,14 +23,24 @@ int main(int argc, char *argv[]) {
    
   
 
-  Eigen::MatrixXi F = Eigen::ArrayXXi::Zero(L, L) ;
-  F = cluster_matrix(M, L);
+  Eigen::ArrayXXi F = Eigen::ArrayXXi::Zero(L, L) ;
+  F = clouster_matrix(M, L);
+
+
+  Eigen::ArrayXXi G = Eigen::ArrayXXi::Zero(L, L) ;
+
+  G = index_matrix(F, L);
+  F.resize(0,0);
+
+  
 
   std::cout << "La matriz original es" << std::endl << M << std::endl
-  << "La matriz de percolación es" << std::endl
-  << F << std::endl
+  << "La matriz de percolación indexada es" << std::endl
+  << G << std::endl
   << "¿EL sistema percola?" << std::endl
-  << Percolation(F, L) << std::endl;
+  << Percolation(G, L) << std::endl
+  <<"EL tamaño del clouster percolante más grande es"<<std::endl
+	    <<Size_clouster(G, L)<<std::endl;
 
   return 0;
 }
