@@ -35,13 +35,13 @@ int main(int argc, char *argv[]) {
 
   
 
-  std::cout << "La matriz original es" << std::endl << M << std::endl
-  << "La matriz de percolación indexada es" << std::endl
-  << G << std::endl
-  << "¿EL sistema percola?" << std::endl
-  << Percolation(G, L) << std::endl
-  <<"EL tamaño del clouster percolante más grande es"<<std::endl
-	    <<Size_clouster(G, L)<<std::endl;
-
+  // std::cout << "La matriz original es" << std::endl << M << std::endl
+  // << "La matriz de percolación indexada es" << std::endl
+  // << G << std::endl
+  // << "¿EL sistema percola?" << std::endl
+  // << Percolation(G, L) << std::endl
+  // <<"EL tamaño del clouster percolante más grande es"<<std::endl
+	    // <<Size_clouster(G, L)<<std::endl;
+std::cout << Percolation(G, L) << "\t" << Size_clouster(G, L) << "\n";
   return 0;
 }
