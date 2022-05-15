@@ -12,20 +12,23 @@ CXX = g++
 CXXFLAGS = -Wall -O3
 SANITIZERS = -fsanitize=leak -fsanitize=address -fsanitize=leak
 DEBUGFLAG = -g
+PROFILEFLAG= -pg
+#specify profile report name
+PROF_REPORT = prof_report.txt
 
 #specify where to find the .cpp files
 vpath %.cpp ./src
 vpath %.o ./build
 foo: ${OBJS}
-	${CXX} ${CXXFLAGS} ${SANITIZERS} ${INCLUDES} -o $@ $(shell find ${OBJ_DIR} -name '*.o')
+	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} -o $@ $(shell find ${OBJ_DIR} -name '*.o')
 
 clean:
-	-rm -f ${OBJ_DIR}/*.o foo*
+	-rm -f ${OBJ_DIR}/*.o foo* *.out ${PROF_REPORT}
 
 #implicit rule for making .o from .cpp
 .cpp.o:
 	@-mkdir build
-	${CXX} ${CXXFLAGS} ${SANITIZERS} ${INCLUDES} -c $< -o  ${OBJ_DIR}/$@
+	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} -c $< -o  ${OBJ_DIR}/$@
 
 #format .cpp files using clang format
 format:
@@ -37,5 +40,8 @@ debug:
 	chmod +x init_debug.sh
 	./init_debug.sh
 report:
-
+	
 profile:
+	./foo 8 0.5 2
+	gprof foo gmon.out>${PROF_REPORT} 
+	cat ${PROF_REPORT} 
