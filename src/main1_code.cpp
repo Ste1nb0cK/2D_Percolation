@@ -3,10 +3,11 @@
 #include <cstdlib>
 #include <iostream>
 #include <random>
-#include "percolation_routines.h"
-#include "fill.h"
-
-
+#include "clouster_matrix.hpp"
+#include "index_matrix.hpp"
+#include "fill.hpp"
+#include "percolation.hpp"
+#include "size_clouster.hpp"
 
 
 int main(int argc, char *argv[]) {
