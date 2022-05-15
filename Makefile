@@ -3,12 +3,13 @@ SHELL = /bin/sh
 SRC_DIR = ./src
 OBJ_DIR = ./build
 SRCS = $(shell find ${SRC_DIR} -name '*.cpp')
-OBJS =  main1_code.o percolation_routines.o fill.o
+OBJS =  main1_code.o hood.o clouster_matrix.o fill.o index_matrix.o path.o \
+percolation.o sep.o size_clouster.o
 #specify to the compiler where to find the headers
 INCLUDES = -I "./include"
 #compiler specifications
 CXX = g++
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -O3
 SANITIZERS = -fsanitize=leak -fsanitize=address -fsanitize=leak
 DEBUGFLAG = -g
 
@@ -29,9 +30,12 @@ clean:
 #format .cpp files using clang format
 format:
 	clang-format -i --dry-run src/*.cpp
-	clang-format -i --dry-run include/*.h
+	clang-format -i --dry-run include/*.hpp
 #debug the code
 debug:
 	${CXX} ${DEBUGFLAG}  ${INCLUDES} ${SRCS} -o foo_debug
 	chmod +x init_debug.sh
-	@./init_debug.sh
+	./init_debug.sh
+report:
+
+profile:

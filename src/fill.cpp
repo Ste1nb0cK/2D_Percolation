@@ -1,4 +1,4 @@
-#include "fill.h"
+#include "fill.hpp"
 void fill_array(Eigen::ArrayXXi& A,int L, double p, int seed) {
   std::mt19937 gen(seed);
   std::bernoulli_distribution dis(p);
