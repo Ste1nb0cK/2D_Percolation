@@ -15,6 +15,8 @@ int main(int argc, char *argv[]) {
    const int L = std::atoi(argv[1]);
    const double p = std::atof(argv[2]);
    const double seed = std::atof(argv[3]);
+   
+   auto start = std::chrono::steady_clock::now();
   
   
   Eigen::ArrayXXi M = Eigen::ArrayXXi::Zero(L,L);
@@ -35,13 +37,20 @@ int main(int argc, char *argv[]) {
 
   
 
-  // std::cout << "La matriz original es" << std::endl << M << std::endl
-  // << "La matriz de percolación indexada es" << std::endl
-  // << G << std::endl
-  // << "¿EL sistema percola?" << std::endl
-  // << Percolation(G, L) << std::endl
-  // <<"EL tamaño del clouster percolante más grande es"<<std::endl
-	    // <<Size_clouster(G, L)<<std::endl;
-std::cout << Percolation(G, L) << "\t" << Size_clouster(G, L) << "\n";
+  /* std::cout << "La matriz original es" << std::endl << M << std::endl
+   << "La matriz de percolación indexada es" << std::endl
+   << G << std::endl
+   << "¿EL sistema percola?" << std::endl
+   << Percolation(G, L) << std::endl
+   <<"EL tamaño del clouster percolante más grande es"<<std::endl;
+   <<Size_clouster(G, L)<<std::endl; */
+   
+   std::cout << Percolation(G, L) << "\t" << Size_clouster(G, L) << "\n";
+   
+   auto end = std::chrono::steady_clock::now();
+   std::chrono::duration<double> elapsed_seconds = end-start;
+   std::cout << "Tiempo de computo: "<< elapsed_seconds.count() << " segundos"<<std::endl;
+
+
   return 0;
 }
