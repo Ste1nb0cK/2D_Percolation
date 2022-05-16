@@ -9,31 +9,28 @@
 #include "percolation.hpp"
 #include "size_clouster.hpp"
 
-
 int main(int argc, char *argv[]) {
 
    const int L = std::atoi(argv[1]);
    const double p = std::atof(argv[2]);
-   const double seed = std::atof(argv[3]);
-   
+   const int seed = std::atoi(argv[3]);
+   //tamaño de la muestra que se usa para las estadísticas
+   const int N = 10;
    auto start = std::chrono::steady_clock::now();
   
   
-  Eigen::ArrayXXi M = Eigen::ArrayXXi::Zero(L,L);
-  fill_array(M, L, p, seed);
+   Eigen::ArrayXXi M = Eigen::ArrayXXi::Zero(L,L);
+   fill_array(M, L, p, seed);
  
-  
-   
-  
 
-  Eigen::ArrayXXi F = Eigen::ArrayXXi::Zero(L, L) ;
-  F = clouster_matrix(M, L);
+   Eigen::ArrayXXi F = Eigen::ArrayXXi::Zero(L, L) ;
+   F = clouster_matrix(M, L);
 
 
-  Eigen::ArrayXXi G = Eigen::ArrayXXi::Zero(L, L) ;
+   Eigen::ArrayXXi G = Eigen::ArrayXXi::Zero(L, L) ;
 
-  G = index_matrix(F, L);
-  F.resize(0,0);
+   G = index_matrix(F, L);
+   F.resize(0,0);
 
   
 
@@ -48,11 +45,11 @@ int main(int argc, char *argv[]) {
    //std::cout << Percolation(G, L) << "\t" << Size_clouster(G, L) << "\n";
    
    auto end = std::chrono::steady_clock::now();
-   bool Percolation_vale = Percolation(G,L);
    int tamaño = Size_clouster(G,L);
+   bool Percolation_value = Percolation(G, L);
    std::chrono::duration<double> elapsed_seconds = end-start;
-   std::cout << Percolation_vale << "\t" << tamaño << "\t"<< elapsed_seconds.count() << std::endl;
-
+   std::cout << L<<"\t"<< p<< "\t"<<seed << "\t"<< Percolation_value << "\t"
+             << tamaño << "\t"<< elapsed_seconds.count() << std::endl;
 
   return 0;
 }
