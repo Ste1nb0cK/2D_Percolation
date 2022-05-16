@@ -1,0 +1,780 @@
+0
+0
+Tiempo de computo: 0.00014903 segundos
+0
+0
+Tiempo de computo: 0.000170689 segundos
+0
+0
+Tiempo de computo: 0.000164417 segundos
+0
+0
+Tiempo de computo: 0.000168815 segundos
+0
+0
+Tiempo de computo: 0.000161246 segundos
+0
+0
+Tiempo de computo: 0.000148907 segundos
+0
+0
+Tiempo de computo: 0.000161283 segundos
+0
+0
+Tiempo de computo: 0.000166461 segundos
+0
+0
+Tiempo de computo: 0.000164663 segundos
+0
+0
+Tiempo de computo: 0.000158781 segundos
+0
+0
+Tiempo de computo: 0.000162957 segundos
+0
+0
+Tiempo de computo: 0.000157204 segundos
+0
+0
+Tiempo de computo: 0.000158872 segundos
+0
+0
+Tiempo de computo: 0.000156219 segundos
+0
+0
+Tiempo de computo: 0.000158061 segundos
+0
+0
+Tiempo de computo: 0.000153104 segundos
+0
+0
+Tiempo de computo: 0.000162614 segundos
+0
+0
+Tiempo de computo: 0.000165393 segundos
+0
+0
+Tiempo de computo: 0.000150804 segundos
+0
+0
+Tiempo de computo: 0.000167634 segundos
+0
+0
+Tiempo de computo: 0.000170135 segundos
+0
+0
+Tiempo de computo: 0.000163318 segundos
+0
+0
+Tiempo de computo: 0.000164809 segundos
+0
+0
+Tiempo de computo: 0.000158121 segundos
+0
+0
+Tiempo de computo: 0.00016268 segundos
+0
+0
+Tiempo de computo: 0.000159973 segundos
+0
+0
+Tiempo de computo: 0.000163849 segundos
+0
+0
+Tiempo de computo: 0.000161055 segundos
+0
+0
+Tiempo de computo: 0.000158772 segundos
+0
+0
+Tiempo de computo: 0.00016268 segundos
+0
+0
+Tiempo de computo: 0.000162491 segundos
+0
+0
+Tiempo de computo: 0.000158745 segundos
+0
+0
+Tiempo de computo: 0.000164379 segundos
+0
+0
+Tiempo de computo: 0.000158885 segundos
+0
+0
+Tiempo de computo: 0.000157875 segundos
+0
+0
+Tiempo de computo: 0.00015785 segundos
+0
+0
+Tiempo de computo: 0.000170548 segundos
+0
+0
+Tiempo de computo: 0.000183747 segundos
+0
+0
+Tiempo de computo: 0.00016855 segundos
+0
+0
+Tiempo de computo: 0.00018559 segundos
+0
+0
+Tiempo de computo: 0.000167783 segundos
+0
+0
+Tiempo de computo: 0.000173123 segundos
+0
+0
+Tiempo de computo: 0.000165679 segundos
+0
+0
+Tiempo de computo: 0.000176487 segundos
+0
+0
+Tiempo de computo: 0.000165419 segundos
+0
+0
+Tiempo de computo: 0.000198162 segundos
+0
+0
+Tiempo de computo: 0.000168355 segundos
+0
+0
+Tiempo de computo: 0.00015748 segundos
+0
+0
+Tiempo de computo: 0.000159806 segundos
+0
+0
+Tiempo de computo: 0.000164403 segundos
+0
+0
+Tiempo de computo: 0.000161477 segundos
+0
+0
+Tiempo de computo: 0.000168511 segundos
+0
+0
+Tiempo de computo: 0.000159345 segundos
+0
+0
+Tiempo de computo: 0.000163109 segundos
+0
+0
+Tiempo de computo: 0.000160657 segundos
+0
+0
+Tiempo de computo: 0.000155566 segundos
+0
+0
+Tiempo de computo: 0.000166946 segundos
+0
+0
+Tiempo de computo: 0.000158746 segundos
+0
+0
+Tiempo de computo: 0.000159324 segundos
+0
+0
+Tiempo de computo: 0.000157997 segundos
+0
+0
+Tiempo de computo: 0.000172912 segundos
+0
+0
+Tiempo de computo: 0.000168922 segundos
+0
+0
+Tiempo de computo: 0.000184974 segundos
+0
+0
+Tiempo de computo: 0.000180519 segundos
+0
+0
+Tiempo de computo: 0.000153901 segundos
+0
+0
+Tiempo de computo: 0.000172727 segundos
+0
+0
+Tiempo de computo: 0.000177026 segundos
+0
+0
+Tiempo de computo: 0.000159973 segundos
+0
+0
+Tiempo de computo: 0.000156001 segundos
+0
+0
+Tiempo de computo: 0.000179709 segundos
+0
+0
+Tiempo de computo: 0.000159319 segundos
+0
+0
+Tiempo de computo: 0.000172312 segundos
+0
+0
+Tiempo de computo: 0.000180544 segundos
+0
+0
+Tiempo de computo: 0.00016815 segundos
+0
+0
+Tiempo de computo: 0.000192466 segundos
+0
+0
+Tiempo de computo: 0.000166837 segundos
+0
+0
+Tiempo de computo: 0.000163815 segundos
+0
+0
+Tiempo de computo: 0.00016793 segundos
+0
+0
+Tiempo de computo: 0.000165052 segundos
+0
+0
+Tiempo de computo: 0.000160765 segundos
+0
+0
+Tiempo de computo: 0.00016291 segundos
+0
+0
+Tiempo de computo: 0.000246524 segundos
+0
+0
+Tiempo de computo: 0.000153488 segundos
+0
+0
+Tiempo de computo: 0.00016284 segundos
+0
+0
+Tiempo de computo: 0.000162944 segundos
+0
+0
+Tiempo de computo: 0.000160177 segundos
+0
+0
+Tiempo de computo: 0.000206318 segundos
+0
+0
+Tiempo de computo: 0.000187762 segundos
+0
+0
+Tiempo de computo: 0.000175513 segundos
+0
+0
+Tiempo de computo: 0.000168378 segundos
+0
+0
+Tiempo de computo: 0.000164062 segundos
+0
+0
+Tiempo de computo: 0.000162524 segundos
+0
+0
+Tiempo de computo: 0.000171918 segundos
+0
+0
+Tiempo de computo: 0.000168773 segundos
+0
+0
+Tiempo de computo: 0.000162985 segundos
+0
+0
+Tiempo de computo: 0.000169638 segundos
+0
+0
+Tiempo de computo: 0.000168103 segundos
+0
+0
+Tiempo de computo: 0.000171497 segundos
+0
+0
+Tiempo de computo: 0.000175273 segundos
+0
+0
+Tiempo de computo: 0.000173086 segundos
+0
+0
+Tiempo de computo: 0.000177176 segundos
+0
+0
+Tiempo de computo: 0.000181224 segundos
+0
+0
+Tiempo de computo: 0.000167542 segundos
+0
+0
+Tiempo de computo: 0.000182025 segundos
+0
+0
+Tiempo de computo: 0.000168757 segundos
+0
+0
+Tiempo de computo: 0.000169916 segundos
+0
+0
+Tiempo de computo: 0.000176912 segundos
+0
+0
+Tiempo de computo: 0.000168919 segundos
+1
+164
+Tiempo de computo: 0.000213381 segundos
+0
+0
+Tiempo de computo: 0.000180562 segundos
+0
+0
+Tiempo de computo: 0.000180616 segundos
+1
+419
+Tiempo de computo: 0.000245023 segundos
+0
+0
+Tiempo de computo: 0.000241544 segundos
+0
+0
+Tiempo de computo: 0.00017685 segundos
+0
+0
+Tiempo de computo: 0.00016758 segundos
+0
+0
+Tiempo de computo: 0.000175354 segundos
+0
+0
+Tiempo de computo: 0.000170515 segundos
+0
+0
+Tiempo de computo: 0.000180365 segundos
+1
+288
+Tiempo de computo: 0.000247795 segundos
+0
+0
+Tiempo de computo: 0.000177474 segundos
+0
+0
+Tiempo de computo: 0.000177664 segundos
+1
+437
+Tiempo de computo: 0.000247798 segundos
+0
+0
+Tiempo de computo: 0.000182122 segundos
+0
+0
+Tiempo de computo: 0.000162557 segundos
+0
+0
+Tiempo de computo: 0.000178648 segundos
+0
+0
+Tiempo de computo: 0.000168152 segundos
+0
+0
+Tiempo de computo: 0.0001804 segundos
+0
+0
+Tiempo de computo: 0.000178294 segundos
+1
+297
+Tiempo de computo: 0.000240266 segundos
+0
+0
+Tiempo de computo: 0.000196217 segundos
+0
+0
+Tiempo de computo: 0.000176388 segundos
+1
+440
+Tiempo de computo: 0.000264248 segundos
+0
+0
+Tiempo de computo: 0.000165346 segundos
+0
+0
+Tiempo de computo: 0.000186286 segundos
+1
+201
+Tiempo de computo: 0.000226021 segundos
+1
+256
+Tiempo de computo: 0.000239133 segundos
+1
+362
+Tiempo de computo: 0.0002312 segundos
+0
+0
+Tiempo de computo: 0.000173013 segundos
+1
+318
+Tiempo de computo: 0.000227003 segundos
+0
+0
+Tiempo de computo: 0.000176393 segundos
+1
+315
+Tiempo de computo: 0.000225639 segundos
+1
+458
+Tiempo de computo: 0.000253097 segundos
+0
+0
+Tiempo de computo: 0.000189626 segundos
+0
+0
+Tiempo de computo: 0.000176087 segundos
+1
+204
+Tiempo de computo: 0.000233118 segundos
+1
+259
+Tiempo de computo: 0.000239961 segundos
+1
+369
+Tiempo de computo: 0.000259057 segundos
+0
+0
+Tiempo de computo: 0.000179842 segundos
+1
+331
+Tiempo de computo: 0.000228901 segundos
+0
+0
+Tiempo de computo: 0.000177551 segundos
+1
+370
+Tiempo de computo: 0.000225513 segundos
+1
+469
+Tiempo de computo: 0.000246238 segundos
+0
+0
+Tiempo de computo: 0.00017592 segundos
+0
+0
+Tiempo de computo: 0.000172479 segundos
+1
+221
+Tiempo de computo: 0.000247957 segundos
+1
+515
+Tiempo de computo: 0.000253192 segundos
+1
+392
+Tiempo de computo: 0.000235201 segundos
+0
+0
+Tiempo de computo: 0.000177349 segundos
+1
+336
+Tiempo de computo: 0.000231386 segundos
+0
+0
+Tiempo de computo: 0.00018187 segundos
+1
+373
+Tiempo de computo: 0.000239508 segundos
+1
+489
+Tiempo de computo: 0.00026795 segundos
+0
+0
+Tiempo de computo: 0.000181108 segundos
+0
+0
+Tiempo de computo: 0.00019345 segundos
+1
+223
+Tiempo de computo: 0.000242458 segundos
+1
+524
+Tiempo de computo: 0.000249657 segundos
+1
+405
+Tiempo de computo: 0.000247178 segundos
+1
+211
+Tiempo de computo: 0.00022428 segundos
+1
+347
+Tiempo de computo: 0.000238099 segundos
+0
+0
+Tiempo de computo: 0.000217986 segundos
+1
+550
+Tiempo de computo: 0.000321917 segundos
+1
+498
+Tiempo de computo: 0.000254479 segundos
+1
+401
+Tiempo de computo: 0.000242937 segundos
+0
+0
+Tiempo de computo: 0.000179411 segundos
+1
+256
+Tiempo de computo: 0.000235856 segundos
+1
+537
+Tiempo de computo: 0.000257121 segundos
+1
+433
+Tiempo de computo: 0.000239374 segundos
+1
+341
+Tiempo de computo: 0.000213968 segundos
+1
+358
+Tiempo de computo: 0.000244073 segundos
+1
+310
+Tiempo de computo: 0.000228086 segundos
+1
+571
+Tiempo de computo: 0.000283761 segundos
+1
+563
+Tiempo de computo: 0.000278803 segundos
+1
+426
+Tiempo de computo: 0.000257557 segundos
+1
+386
+Tiempo de computo: 0.000238009 segundos
+1
+258
+Tiempo de computo: 0.000247608 segundos
+1
+545
+Tiempo de computo: 0.000270828 segundos
+1
+467
+Tiempo de computo: 0.000266295 segundos
+1
+344
+Tiempo de computo: 0.000210511 segundos
+1
+366
+Tiempo de computo: 0.00023572 segundos
+1
+345
+Tiempo de computo: 0.000226656 segundos
+1
+578
+Tiempo de computo: 0.00030793 segundos
+1
+578
+Tiempo de computo: 0.000274796 segundos
+1
+462
+Tiempo de computo: 0.000313828 segundos
+1
+393
+Tiempo de computo: 0.000227755 segundos
+1
+268
+Tiempo de computo: 0.000233865 segundos
+1
+573
+Tiempo de computo: 0.000271725 segundos
+1
+497
+Tiempo de computo: 0.00025752 segundos
+1
+405
+Tiempo de computo: 0.000232697 segundos
+1
+461
+Tiempo de computo: 0.000270207 segundos
+1
+561
+Tiempo de computo: 0.00026715 segundos
+1
+593
+Tiempo de computo: 0.000283759 segundos
+1
+585
+Tiempo de computo: 0.000273285 segundos
+1
+587
+Tiempo de computo: 0.000280497 segundos
+1
+399
+Tiempo de computo: 0.000232291 segundos
+1
+317
+Tiempo de computo: 0.000256589 segundos
+1
+614
+Tiempo de computo: 0.000282923 segundos
+1
+617
+Tiempo de computo: 0.000266052 segundos
+1
+413
+Tiempo de computo: 0.000235053 segundos
+1
+474
+Tiempo de computo: 0.000260427 segundos
+1
+574
+Tiempo de computo: 0.000281665 segundos
+1
+601
+Tiempo de computo: 0.000295426 segundos
+1
+597
+Tiempo de computo: 0.000284534 segundos
+1
+606
+Tiempo de computo: 0.000288658 segundos
+1
+613
+Tiempo de computo: 0.000282548 segundos
+1
+327
+Tiempo de computo: 0.000252668 segundos
+1
+621
+Tiempo de computo: 0.00029673 segundos
+1
+625
+Tiempo de computo: 0.000303854 segundos
+1
+574
+Tiempo de computo: 0.000299195 segundos
+1
+508
+Tiempo de computo: 0.000276448 segundos
+1
+579
+Tiempo de computo: 0.000281581 segundos
+1
+658
+Tiempo de computo: 0.000310885 segundos
+1
+688
+Tiempo de computo: 0.000315867 segundos
+1
+694
+Tiempo de computo: 0.000307958 segundos
+1
+684
+Tiempo de computo: 0.000307123 segundos
+1
+596
+Tiempo de computo: 0.000276592 segundos
+1
+680
+Tiempo de computo: 0.000286449 segundos
+1
+705
+Tiempo de computo: 0.000301672 segundos
+1
+718
+Tiempo de computo: 0.000303652 segundos
+1
+677
+Tiempo de computo: 0.000304949 segundos
+1
+696
+Tiempo de computo: 0.000297991 segundos
+1
+772
+Tiempo de computo: 0.000315356 segundos
+1
+758
+Tiempo de computo: 0.000319146 segundos
+1
+758
+Tiempo de computo: 0.000335909 segundos
+1
+748
+Tiempo de computo: 0.000304816 segundos
+1
+727
+Tiempo de computo: 0.000302852 segundos
+1
+751
+Tiempo de computo: 0.000342407 segundos
+1
+760
+Tiempo de computo: 0.000324189 segundos
+1
+770
+Tiempo de computo: 0.000312481 segundos
+1
+741
+Tiempo de computo: 0.000294288 segundos
+1
+776
+Tiempo de computo: 0.000343296 segundos
+1
+810
+Tiempo de computo: 0.000323009 segundos
+1
+806
+Tiempo de computo: 0.000327994 segundos
+1
+792
+Tiempo de computo: 0.000326284 segundos
+1
+786
+Tiempo de computo: 0.00031878 segundos
+1
+778
+Tiempo de computo: 0.000333571 segundos
+1
+783
+Tiempo de computo: 0.000324029 segundos
+1
+803
+Tiempo de computo: 0.000336354 segundos
+1
+797
+Tiempo de computo: 0.000338703 segundos
+1
+785
+Tiempo de computo: 0.000318458 segundos
+1
+813
+Tiempo de computo: 0.00031671 segundos
+1
+821
+Tiempo de computo: 0.000349838 segundos
+1
+822
+Tiempo de computo: 0.00034791 segundos
+1
+808
+Tiempo de computo: 0.00032468 segundos
+1
+798
+Tiempo de computo: 0.000328418 segundos
+1
+790
+Tiempo de computo: 0.000312652 segundos
+1
+798
+Tiempo de computo: 0.000330856 segundos
+1
+817
+Tiempo de computo: 0.000336045 segundos
+1
+807
+Tiempo de computo: 0.000322883 segundos
+1
+794
+Tiempo de computo: 0.000337433 segundos
+1
+817
+Tiempo de computo: 0.000337139 segundos

@@ -40,7 +40,10 @@ debug:
 	chmod +x init_debug.sh
 	./init_debug.sh
 report:
-	
+
+simu1:
+	./foo 4 0.6 1
+
 profile:
 	./foo 8 0.5 2
 	gprof foo gmon.out>${PROF_REPORT} 
