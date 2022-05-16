@@ -5,8 +5,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <random>
-#include "percolation_routines.h"
-#include "fill.h"
+#include "percolation_routines.hpp"
+#include "fill.hpp"
 #include <chrono>
 #include <vector>
 #include <numeric>
