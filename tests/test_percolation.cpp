@@ -1,11 +1,7 @@
 #include<Eigen/Eigen>
-#include "hood.hpp"
-#include "path.hpp"
 #include "clouster_matrix.hpp"
 #include "percolation.hpp"
-#include "sep.hpp"
 #include "index_matrix.hpp"
-#include "size_clouster.hpp"
 #define CATCH_CONFIG_MAIN
 #include "catch2/catch.hpp"
 
