@@ -109,8 +109,8 @@ for j in range(1,p+1):
         VAR4 = VAR4/n
         dv4 = math.sqrt(VAR4)
         DV4.append(dv4)
-
 print("L = 256")
+
 print(P4)
 print(DV4)
 
