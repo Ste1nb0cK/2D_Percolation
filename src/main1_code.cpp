@@ -45,11 +45,13 @@ int main(int argc, char *argv[]) {
    <<"EL tamaño del clouster percolante más grande es"<<std::endl;
    <<Size_clouster(G, L)<<std::endl; */
    
-   std::cout << Percolation(G, L) << "\n" << Size_clouster(G, L) << "\n";
+   //std::cout << Percolation(G, L) << "\t" << Size_clouster(G, L) << "\n";
    
    auto end = std::chrono::steady_clock::now();
+   bool Percolation_vale = Percolation(G,L);
+   int tamaño = Size_clouster(G,L);
    std::chrono::duration<double> elapsed_seconds = end-start;
-   std::cout << "Tiempo de computo: "<< elapsed_seconds.count() << " segundos"<<std::endl;
+   std::cout << Percolation_vale << "\t" << tamaño << "\t"<< elapsed_seconds.count() << std::endl;
 
 
   return 0;
