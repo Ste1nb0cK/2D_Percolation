@@ -59,4 +59,4 @@ profile:
 test:
 	cp -v -u ./build/*.o tests/build_tests/
 	rm tests/build_tests/main1_code.o
-	cd tests; make; ./test_size.x
+	cd tests; make; ./test.x

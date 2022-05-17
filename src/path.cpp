@@ -1,6 +1,5 @@
 #include<Eigen/Eigen>
 #include "path.hpp"
-
 Eigen::ArrayXXi Path(const Eigen::ArrayXXi &I, int L, int scanning, int target,
                      int New) {
 
@@ -21,6 +20,5 @@ Eigen::ArrayXXi Path(const Eigen::ArrayXXi &I, int L, int scanning, int target,
       hood(I, F, L, ii, L - 1, target, New);
     }
   }
-
   return F;
 }

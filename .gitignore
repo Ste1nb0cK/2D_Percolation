@@ -1,5 +1,14 @@
 *.out
 *.x
 *.o
-*_vertical*
 foo
+tests/test_size.x
+*.aux
+*.bcf
+*.log
+*.run
+.ipynb_checkpoints/
+Untitled.ipynb
+cinclude2dot
+.auctex-auto/
+*.run.xml
