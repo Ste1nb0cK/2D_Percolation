@@ -4,9 +4,8 @@ SRC_DIR = ./src
 OBJ_DIR = ./build
 TEST_OBJ_DIR = ./tests/build_tests
 SRCS = $(shell find ${SRC_DIR} -name '*.cpp')
-#ma1n_code.o is not included here to make compiling the tests easier
 OBJS =  hood.o clouster_matrix.o fill.o index_matrix.o path.o \
-percolation.o sep.o size_clouster.o
+percolation.o sep.o size_clouster.o main1_code.o
 TESTSDIR = ./tests
 #specify to the compiler where to find the headers
 INCLUDES = -I "./include"
@@ -26,11 +25,12 @@ PROF_REPORT = prof_report.txt
 vpath %.cpp ./src
 vpath %.o ./build
 foo: ${OBJS}
-	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} -o $@\
+	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} -o $@ \
 	$(shell find ${OBJ_DIR} -name '*.o')
 
 clean:
 	-rm -f ${OBJ_DIR}/*.o foo* *.out ${PROF_REPORT}
+	-cd tests; make clean
 
 #implicit rule for making .o from .cpp
 .cpp.o:
@@ -56,10 +56,7 @@ profile:
 	gprof foo gmon.out>${PROF_REPORT} 
 	cat ${PROF_REPORT} 
 
-test_size.x: ${FILESTESTSIZE} tests/test_size.cpp
-#copy the .o already builded and delete the one with the main function
-	cp build/* tests/build_tests/
-	@-rm tests/build_tests/main1_code.o
-	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} ${TESTFLAG} \
-	-c tests/test_size.cpp -o ./tests/build_tests/test_size.o
-	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} -o $@ $(shell find ${TESTS_OBJ_DIR} -name '*.o')
+test:
+	cp -v -u ./build/*.o tests/build_tests/
+	rm tests/build_tests/main1_code.o
+	cd tests; make; ./test_size.x
