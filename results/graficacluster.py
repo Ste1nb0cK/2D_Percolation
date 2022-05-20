@@ -36,35 +36,35 @@ cluster_size_std_list512 = []
 
 for p in Probabilidad:
     #aquí cálculamos el promedio para todos los elementos que tienen el p dado y sacamos el promedio
-    cluster_size_avg32 = df32[df32['p']== p]["cluster_size"].mean()
+    cluster_size_avg32 = df32[df32['p']== p]["cluster_size"].mean()/(L*L)
     cluster_size_avg_list32.append( cluster_size_avg32)
 
-    cluster_size_avg64 = df64[df64['p']== p]["cluster_size"].mean()
+    cluster_size_avg64 = df64[df64['p']== p]["cluster_size"].mean()/(L*L)
     cluster_size_avg_list64.append( cluster_size_avg64)
 
-    cluster_size_avg128 = df128[df128['p']== p]["cluster_size"].mean()
+    cluster_size_avg128 = df128[df128['p']== p]["cluster_size"].mean()/(L*L)
     cluster_size_avg_list128.append( cluster_size_avg128)
 
-    cluster_size_avg256 = df256[df256['p']== p]["cluster_size"].mean()
+    cluster_size_avg256 = df256[df256['p']== p]["cluster_size"].mean()/(L*L)
     cluster_size_avg_list256.append( cluster_size_avg256)
 
-    cluster_size_avg512 = df512[df512['p']== p]["cluster_size"].mean()
+    cluster_size_avg512 = df512[df512['p']== p]["cluster_size"].mean()/(L*L)
     cluster_size_avg_list512.append( cluster_size_avg512)
 
     #aquí hacemos esencialmente lo mismo pero cálculamos la desviación estandar
-    cluster_size_std32 = df256[df32['p']== p]["cluster_size"].std()
+    cluster_size_std32 = df256[df32['p']== p]["cluster_size"].std()/(L*L)
     cluster_size_std_list32.append( cluster_size_std32 )
 
-    cluster_size_std64 = df64[df64['p']== p]["cluster_size"].std()
+    cluster_size_std64 = df64[df64['p']== p]["cluster_size"].std()/(L*L)
     cluster_size_std_list64.append( cluster_size_std64 )
 
-    cluster_size_std128 = df128[df128['p']== p]["cluster_size"].std()
+    cluster_size_std128 = df128[df128['p']== p]["cluster_size"].std()/(L*L)
     cluster_size_std_list128.append( cluster_size_std128 )
 
-    cluster_size_std256 = df256[df256['p']== p]["cluster_size"].std()
+    cluster_size_std256 = df256[df256['p']== p]["cluster_size"].std()/(L*L)
     cluster_size_std_list256.append( cluster_size_std256 )
 
-    cluster_size_std512 = df512[df512['p']== p]["cluster_size"].std()
+    cluster_size_std512 = df512[df512['p']== p]["cluster_size"].std()/(L*L)
     cluster_size_std_list512.append( cluster_size_std512 )
 
 #aquí hacemos las graficas
