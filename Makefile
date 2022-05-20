@@ -11,7 +11,8 @@ TESTSDIR = ./tests
 INCLUDES = -I "./include"
 #compiler specifications
 CXX = g++
-CXXFLAGS = -Wall -O3
+CXXFLAGS = -Wall
+OPTIMIZATIONFLAG = -O3
 SANITIZERS = -fsanitize=leak -fsanitize=address -fsanitize=leak
 DEBUGFLAG = -g
 PROFILEFLAG= -pg
@@ -34,7 +35,7 @@ clean:
 
 #implicit rule for making .o from .cpp
 .cpp.o:
-	@-mkdir build
+	@ -mkdir build
 	${CXX} ${CXXFLAGS} ${PROFILEFLAG} ${SANITIZERS} ${INCLUDES} -c $< -o  ${OBJ_DIR}/$@
 
 #format .cpp files using clang format

@@ -8,7 +8,9 @@ Eigen::ArrayXi sep(Eigen::ArrayXXi &I, int L) {
   Eigen::ArrayXXi J = Path(H, L, 1, 1, 1);
   H.resize(0, 0);
 
-  Eigen::ArrayXi V(2); //Declaramos un vector de dos elementos que nos determinará si hay clusters verticales y horzontales puros.
+
+  Eigen::ArrayXi V(2);
+
   V(0) = 0;
   V(1) = 0;
 

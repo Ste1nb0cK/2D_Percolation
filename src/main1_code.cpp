@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
    const double p = std::atof(argv[2]);
    const int seed = std::atoi(argv[3]);
    //tamaño de la muestra que se usa para las estadísticas
-   const int N = 10;
    auto start = std::chrono::steady_clock::now();
   
   
@@ -43,13 +42,12 @@ int main(int argc, char *argv[]) {
    <<Size_clouster(G, L)<<std::endl; */
    
    //std::cout << Percolation(G, L) << "\t" << Size_clouster(G, L) << "\n";
-   
-   auto end = std::chrono::steady_clock::now();
-   int tamaño = Size_clouster(G,L);
+   int tamano = Size_clouster(G,L);
    bool Percolation_value = Percolation(G, L);
-   std::chrono::duration<double> elapsed_seconds = end-start;
+   auto end = std::chrono::steady_clock::now();
+    std::chrono::duration<double> elapsed_seconds = end-start;
    std::cout << L<<"\t"<< p<< "\t"<<seed << "\t"<< Percolation_value << "\t"
-             << tamaño << "\t"<< elapsed_seconds.count() << std::endl;
+             << tamano << "\t"<< elapsed_seconds.count() << std::endl;
 
   return 0;
 }
