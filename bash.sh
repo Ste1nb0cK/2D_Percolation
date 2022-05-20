@@ -16,3 +16,4 @@ done
 python3 results/graficacluster.py
 python3 results/graficaprobabilidad.py
 
+mv *.png ../Imagenes 
