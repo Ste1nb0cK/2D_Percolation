@@ -8,9 +8,6 @@ Eigen::ArrayXi sep(Eigen::ArrayXXi &I, int L) {
   Eigen::ArrayXXi J = Path(H, L, 1, 1, 1);
   H.resize(0, 0);
 
-  int ver = 0;
-  int hor = 0;
-  int per = 0;
   Eigen::ArrayXi V(2);
   V(0) = 0;
   V(1) = 0;
