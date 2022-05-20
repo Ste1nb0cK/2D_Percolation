@@ -67,13 +67,15 @@ for p in Probabilidad:
     percolation_value_std_list512.append( percolation_value_std512)
 
 #aquí hacemos las graficas
+plt.figure(figsize=(13,10))
 plt.errorbar(Probabilidad, percolation_value_avg_list32, yerr = percolation_value_std_list32, marker = 'o', label = 'L=32')
 plt.errorbar(Probabilidad, percolation_value_avg_list64, yerr = percolation_value_std_list64, marker = 'o', label = 'L=64')
 plt.errorbar(Probabilidad, percolation_value_avg_list128, yerr = percolation_value_std_list128, marker = 'o', label = 'L=128')
 plt.errorbar(Probabilidad, percolation_value_avg_list256, yerr = percolation_value_std_list256, marker = 'o', label = 'L=256')
 plt.errorbar(Probabilidad, percolation_value_avg_list512, yerr = percolation_value_std_list512, marker = 'o', label = 'L=512')
-plt.title('Probabilidad promedio de que hay un cluster percolante')
-plt.xlabel('Probabilidad de llenado')
-plt.ylabel('Probabilidad promedio(p,L)')
+plt.title('Probabilidad para la aparación de cluster percolante')
+plt.xlabel(r'Probabilidad de llenado $p$')
+plt.ylabel(r'Probabilidad $P(p,L)$')
 plt.legend()
+plt.grid()
 plt.savefig("Probabilidad.pdf")

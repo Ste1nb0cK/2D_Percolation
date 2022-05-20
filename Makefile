@@ -48,7 +48,7 @@ debug:
 	chmod +x init_debug.sh
 	./init_debug.sh
 report:
-
+	pdflatex main.tex
 simu1:
 	./foo 4 0.6 1
 
